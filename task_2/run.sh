@@ -1,1 +1,1 @@
-OMP_NUM_THREADS=4 ./run.out 15
+OMP_NUM_THREADS=4 ./run.out 10
