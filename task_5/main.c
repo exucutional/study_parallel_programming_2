@@ -41,7 +41,7 @@ int main(int argc, char** argv)
     }
     double elem = 0; // element value
     #pragma omp parallel for schedule(static) reduction(+:sum) firstprivate(elem)
-    for (u_int64_t i = 0; i < n; i++)
+    for (u_int64_t i = 1; i <= n; i++)
     {
         double elem_tmp = get_element(x, i, elem);
         if (elem_tmp != 0)
